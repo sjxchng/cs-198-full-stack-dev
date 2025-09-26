@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="demo.css">
 </head>
 <body>
-    <h2>Linking</h2>
-    <nav>
-        <a href = "home.html">Home</a> |
-        <a href = "about.html">About</a> |
-    </nav>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">About Turtles</h1>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
 
     <h2>Fun Facts</h2>
     <p>Green sea turtles are what they eat!</p>
@@ -23,6 +30,11 @@
     <h2>Links and Images</h2>
     <p>Visit <a href="https://www.packerlandvet.com/blog/fun-turtle-facts">this website</a> for fun turtle facts!</p>
     <p>Here is an image:</p>
-    <p><img src="turtle.png" alt = "turtles" width = "200"></p>
+    <figure class="hero">
+        <img src="turtle.png" alt="turtles">
+        <figcaption>Green sea turtle</figcaption>
+    </figure>
+
+    </main>
 </body>
 </html>

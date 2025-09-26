@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First HTML Website</title>
+    <link rel="stylesheet" href="demo.css">
 </head>
 <body>
-    <h1>Turtles</h1>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">Turtles</h1>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
 
     <h2>Linking</h2>
-    <nav>
-        <a href = "home.html">Home</a> |
-        <a href = "about.html">About</a> |
-    </nav>
+    
 
     <h2>Fill this out to connect</h2>
-    <form action="/submit" method="post">
+    <form class="contact-form" action="/submit" method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
+        <input type="text" id="name" name="name">
+
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
-        <input type="submit" value="Submit">
+        <input type="email" id="email" name="email">
+
+        <button type="submit" class="btn">Submit</button>
     </form>
 
     <h2>Lists</h2>
@@ -47,7 +57,7 @@
         <li>Third</li>
     </ol>
     <h2>Tables</h2>
-    <table border="1">
+    <table class="data-table">
         <tr>
             <th>Header 1</th>
             <th>Header 2</th>
