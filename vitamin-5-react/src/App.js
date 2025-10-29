@@ -7,6 +7,7 @@ import Home from "./pages/Home/Home";
 import NotHome from "./pages/NotHome/NotHome";
 
 import { CounterProvider } from "./context/CounterContext";
+import "./App.css";
 
 function App() {
   return (
@@ -15,13 +16,13 @@ function App() {
         <Navbar />
 
         <Routes>
-          {/* first load / */}
+          {/* first page when you load the site */}
           <Route path="/" element={<Landing />} />
 
-          {/* Home button goes here */}
+          {/* clicking Home in navbar */}
           <Route path="/home" element={<Home />} />
 
-          {/* Not Home button goes here */}
+          {/* clicking Not Home in navbar */}
           <Route path="/nothome" element={<NotHome />} />
         </Routes>
       </div>
@@ -29,4 +30,4 @@ function App() {
   );
 }
 
-export default Appgi
+export default App;
